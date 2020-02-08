@@ -30,7 +30,7 @@
 		"inputSentences": ["social security", "Safety is given at the expense of liberty", "safety", "liberty", "Internet reduces personal security", "personal security", "Information needs to be secure", "information", "data", "secure", "Companies like Facebook steal data", "steal", "Emails are not safe to store data", "Phones should be encrypted to save information", "encrypt"]
 		},
 		{"tag": "abortion",
-		"inputSentences": ["Women should control their bodies", "women", "bodies", "control", "Killing children is a sin", "kill", "Pro-life advocates ignore born babies", "pro-life", "baby", "babies", "Pro-choice supporters murder children", "pro-choice" "Religion should stay out of lawmaking", "religion", "My baby is my choice", "choice", "life"]
+		"inputSentences": ["Women should control their bodies", "women", "bodies", "control", "Killing children is a sin", "kill", "Pro-life advocates ignore born babies", "pro-life", "baby", "babies", "Pro-choice supporters murder children", "pro-choice", "Religion should stay out of lawmaking", "religion", "My baby is my choice", "choice", "life"]
 		},
 		{"tag": "education",
 		"inputSentences": ["Improving access to education brings a smarter population", "education", "access", "smart", "literacy", "illiteracy", "Illiteracy is a problem in under-developed countries", "Educated people have jobs", "jobs", "educated", "Teachers are underpaid", "teachers", "educators", "Learning is specified to specific subjects", "learn", "stem fields have jobs", "stem", "jobs", "Teaching younger kids is good for healthy societies", "Kids should be taught economics in school"]
