@@ -3,7 +3,7 @@
 		"inputSentences": ["I am worried about climate change", "The burning of the amazon rainforest concerns me", "Climate change is a hoax", "We must focus on renewable resources", "Decarbonization is of great importance", "Fossil fuels are running out", "Clean air, water, and earth is dissapearing", "Corporations emit the largest carbon footprint"]
 		},
 		{"tag": "guns",
-		"inputSentences": ["Gun control is not easy", "Bullet control is a solution", "Automatic weapons are dangerous", "Disarming people is dangerous", "Armed people are safe", "Ammunition regulation is tough to create", "Guns should not be treated as toys", "The NRA is a corrupt group", "School shootings can not be stopped", "Self defense needs to be accessible"]
+		"inputSentences": ["Gun control is not easy", "Bullet control is a solution", "Automatic weapons are dangerous", "Disarming people is dangerous", "Armed people are safe", "Ammunition regulation is tough to create", "Guns should not be treated as toys", "The NRA is a corrupt group", "School shootings can not be stopped", "Self defense needs to be accessible", "The second amendment is a necessary right for society"]
 		},
 		{"tag": "taxes",
 		"inputSentences": ["Paying half of your salary to the government is not right", "Taxation is theft", "Taxes help pay for givernment services", "Businesses can't pay taxes", "Corporate bailouts take our taxes", "Income taxpromotes inequality", "Taxes pay for government workers", "Taxes should pay for schools and hospitals instead of war", "Taxes pay to fix our deficit"]
@@ -35,14 +35,8 @@
 		{"tag": "education",
 		"inputSentences": ["Improving access to education brings a smarter population", "Illiteracy is a big problem in under-developed countries", "Jobs go to educated people", "Teachers are very underpaid", "Learning has become specified to certain subjects", "stem fields have the most jobs"]
 		},
-		{"tag": "I'm_done",
-		"inputSentences": []
+		{"tag": "Im_done",
+		"inputSentences": ["I am done", "Stop talking to me", "No more questions", "This is enough", "This is completed", "Finish this test"]
 		},
-		{"tag": "blank",
-		"inputSentences": []
-		},
-		{"tag": "blank",
-		"inputSentences": []
-		}
 	]
 }
