@@ -13,6 +13,13 @@ import cv2
 import glob
 import numpy as np
 
+import scipy.misc
+
+from vis.visualization import visualize_saliency
+import matplotlib.pyplot as plt
+import scipy.ndimage as ndimage
+
+
 
 class FaceDetectionNN():
     modelFile = "FaceDetectionModel.h5"
@@ -76,3 +83,13 @@ class FaceDetectionNN():
     def predict(self, img):
         predictionResult = self.model.predict(img)
         return predictionResult
+
+    def showSaliencyMap(self, img, name):
+        grads = visualize_saliency(self.model, -1, filter_indices = 0, seed_input=img)
+        smoothe = ndimage.gaussian_filter(grads[:,:], sigma=3)
+
+        plt.imshow(img)
+        plt.imshow(smoothe, alpha = .6)
+
+        plt.savefig(name)
+        plt.clf()
