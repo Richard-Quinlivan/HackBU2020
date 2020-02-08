@@ -35,8 +35,8 @@
 		{"tag": "education",
 		"inputSentences": ["Improving access to education brings a smarter population", "Illiteracy is a big problem in under-developed countries", "Jobs go to educated people", "Teachers are very underpaid", "Learning has become specified to certain subjects", "stem fields have the most jobs"]
 		},
-		{"tag": "Im_done",
-		"inputSentences": ["I am done", "Stop talking to me", "No more questions", "This is enough", "This is completed", "Finish this test", "No, not really", "No not really", "Nah this is good", "Nah I'm done", "I have finished my answers", "Stop pestering me with questions"]
-		},
+		{"tag": "crime",
+		"inputSentences": []
+		}
 	]
 }
