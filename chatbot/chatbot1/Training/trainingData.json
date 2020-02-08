@@ -15,10 +15,10 @@
 		"inputSentences": ["Government programs increase size", "government", "size of government", "Large governments give less freedom", "freedom", "Small governments have less regulation", "regulation", "Enaged governments work on public works", "public work", "Governments interfere in our lives", "interfere", "Big government hurts the economy", "economy"]
 		},
 		{"tag": "military",
-		"inputSentences": ["Men die in war to protect citizens", "war", "protect", "Military spending is expensive", "military", "expensive", "Military expenses are huge", "military spending", "The military is focused on finding oil", "oil", "War in foreign countries is expensive"]
+		"inputSentences": ["Men die in war to protect citizens", "kill", "war", "wartime", "protect", "Military spending is expensive", "military", "expensive", "Military expenses are huge", "military spending", "The military is focused on finding oil", "oil", "War in foreign countries is expensive"]
 		},
 		{"tag": "corporate_power",
-		"inputSentences": ["Corporate power destroys small businesses", "corporate power", "small business", "Marketing and financial investors matter", "invest", "marketing", "Corporations care about increasing profits", "profit", "Monopolies should be broken up", "monopoly", "Companies sell goods and services"]
+		"inputSentences": ["Corporate power destroys small businesses", "administration", "abuse of power", "corporate power", "small business", "Marketing and financial investors matter", "invest", "marketing", "Corporations care about increasing profits", "profit", "Monopolies should be broken up", "monopoly", "Companies sell goods and services"]
 		},
 		{"tag": "national_debt",
 		"inputSentences": ["Large spending leads to national debts", "debt", "spending", "Taxation reduced debt", "taxation", "Government projects deepen debt", "Depressions and recessions occur due to debt", "depression", "recession", "Owing money to foreign countries hurts the economy", "owe money"]
@@ -27,7 +27,7 @@
 		"inputSentences": ["Patriotism and nationalism are different", "patriotism", "nationalism", "Nationalism justifies inferiority", "inferior", "Pride leads to wars", "pride", "Countries are called the greatest country", "Countries include diverse subsets of ethnicities", "diverse", "ethnicity", "Colonies are founded by nations", "colony"]
 		},
 		{"tag": "security",
-		"inputSentences": ["social security", "Safety is given at the expense of liberty", "safety", "liberty", "Internet reduces personal security", "personal security", "Information needs to be secure", "information", "data", "secure", "Companies like Facebook steal data", "steal", "Emails are not safe to store data", "Phones should be encrypted to save information", "encrypt"]
+		"inputSentences": ["social security", "private", "public", "Safety is given at the expense of liberty", "safety", "liberty", "Internet reduces personal security", "personal security", "Information needs to be secure", "information", "data", "secure", "Companies like Facebook steal data", "steal", "Emails are not safe to store data", "Phones should be encrypted to save information", "encrypt"]
 		},
 		{"tag": "abortion",
 		"inputSentences": ["Women should control their bodies", "women", "bodies", "control", "Killing children is a sin", "kill", "Pro-life advocates ignore born babies", "pro-life", "baby", "babies", "Pro-choice supporters murder children", "pro-choice", "Religion should stay out of lawmaking", "religion", "My baby is my choice", "choice", "life"]
