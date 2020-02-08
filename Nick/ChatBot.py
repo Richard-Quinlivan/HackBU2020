@@ -16,7 +16,7 @@ from ModelDesign import ModelDesign
 class ChatBot:
     def __init__(self):
         # Error threshold (we throw out tags under this percentage)
-        self.ERROR_THRESHOLD = 0.25
+        self.ERROR_THRESHOLD = 0.10
         # Load data from pickle and json files
         self.tags, self.words, self.train_x, self.train_y, self.trainingData = self.loadData()
         # Load model
@@ -25,7 +25,7 @@ class ChatBot:
     def loadData(self):
         # Load pickle and json file data
         data = pickle.load(open('Model/data.pickle', 'rb'))
-        with open('Training/trainingData.json', rb) as json_data:
+        with open('Training/trainingData.json', 'rb') as json_data:
             trainingData = json.load(json_data)
         # Return pickle and json file data
         return data['tags'], data['words'], data['train_x'], data['train_y'], trainingData
@@ -70,4 +70,4 @@ class ChatBot:
     def printResults(self, inputSentence):
         results = self.classify(inputSentence)
         for r in results:
-            print("Tag: ", self.tags[r[0]], " Certainty: ", str(r[1]))
+            print("Tag: ", self.tags[r[0]].upper(), "\tCertainty: ", str(r[1]))

@@ -6,9 +6,9 @@ from ChatBot import ChatBot
 
 def main():
     bot = ChatBot()
-    print("\n\n")
+    print('\n\n')
     while(True):
-        inputSentence = "Enter input: "
+        inputSentence = input('Enter input: ')
         bot.printResults(inputSentence)
 
 if __name__ == '__main__':

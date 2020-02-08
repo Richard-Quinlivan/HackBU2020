@@ -35,7 +35,7 @@ def loadData():
 
     # Stem, Lowercase, and Remove Duplicates in word data
     stemmer = LancasterStemmer()
-    words = [stemer.stem(w.lower()) for w in words]
+    words = [stemmer.stem(w.lower()) for w in words]
     words = sorted(list(set(words)))
 
     # Remove Duplicates
@@ -51,7 +51,7 @@ def convertData(tags, words, combos):
     for c in combos:
         # Stem words
         stemmer = LancasterStemmer()
-        tokenWords = [stemmer.stem(w.loser()) for w in c[0]]
+        tokenWords = [stemmer.stem(w.lower()) for w in c[0]]
 
         # Create BagOfWords Array
         bagOfWords = []
@@ -98,7 +98,9 @@ def train():
     pickle.dump({'tags':tags, 'words':words, 'train_x':train_x, 'train_y':train_y}, open('Model/data.pickle', 'wb'))
 
 def main():
+    print("Loading...")
     train()
+    print("Done!")
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     main()
