@@ -1,6 +1,6 @@
 ## Nick Pellegrino
-## Model Design for ChatBot
-## No need to run this file
+## Model Design file used by ChatBot.py and Train.py
+## No need to run this file directly
 
 import tensorflow as tf
 import tflearn
@@ -22,6 +22,6 @@ class ModelDesign:
         model = tflearn.fully_connected(model, y_len, activation='softmax')
         model = tflearn.regression(model)
         # Set up tensorboard to save data
-        model = tflearn.DNN(model, tensorboard_dir="Model")
+        model = tflearn.DNN(model, tensorboard_dir='Model')
         # Return the model
         return model
