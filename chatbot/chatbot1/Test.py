@@ -2,10 +2,10 @@
 ## ChatBot Tester (uses ChatBot.py)
 ## Run this file directly to test the ChatBot in terminal
 
-from ChatBot import ChatBot
+from ChatBot import ChatBot1
 
 def main():
-    bot = ChatBot()
+    bot = ChatBot1()
     print('\n\n')
     while(True):
         inputSentence = input('Enter input: ')

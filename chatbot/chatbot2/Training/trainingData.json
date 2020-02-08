@@ -1,8 +1,14 @@
 {"data": [
-		{"tag": "for",
+		{"tag": "weak for",
 		"inputSentences": ["Yes, that makes sense", "Yes", "Yea", "I agree", "Indeed", "Yep, that pretty much sums it up for me", "Yep", "For", "I am for that"]
 		},
-		{"tag": "against",
+		{"tag": "strong for",
+		"inputSentences": ["Yes, that makes sense", "Yes", "Yea", "I agree", "Indeed", "Yep, that pretty much sums it up for me", "Yep", "For", "I am for that"]
+		},
+		{"tag": "weak against",
+		"inputSentences": ["Yes, that makes sense", "Yes", "Yea", "I agree", "Indeed", "Yep, that pretty much sums it up for me", "Yep", "For", "I am for that"]
+		},
+		{"tag": "strong against",
 		"inputSentences": ["No", "Nah", "No I disgree", "I do not agree", "Nope", "No I hate that", "Fuck I fucking hate that shit", "No way", "Against", "I am against that"]
 		}
 	]
