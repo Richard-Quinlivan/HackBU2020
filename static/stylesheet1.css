@@ -1,13 +1,13 @@
 
 body {
-  background: #FFB983;
+  background: #FAE8AE;
   font-size: 25px;
-  color: black;
+  color: #606CB3;
 
 }
 
 button {
-  background-color: #29DFFF;
+  background-color: #BDC6FC;
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -17,11 +17,14 @@ button {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  border-radius: 8px;
+
+  margin-top: 15px;
 
 }
 
 button:hover {
-  background-color: #0CB2EC;
+  background-color: #606CB3;
   cursor: pointer;
 }
 
@@ -46,6 +49,7 @@ a{
   padding: 5px;
 }
 
+
 .caption{
   font-size: 12px;
 }
@@ -58,4 +62,14 @@ a{
 
 .image{
   width: 100%;
+}
+
+#grey{
+  color: grey;
+  pointer-events: none;
+}
+
+#grey{
+  color: grey;
+  pointer-events: none;
 }
