@@ -1,42 +1,42 @@
 {"data": [
 		{"tag": "environment",
-		"inputSentences": ["I am worried about climate change", "The Amazon rainforest is burning", "Climate change is a hoax", "Renewable resources should be conserved", "Decarbonization is important", "Fossil fuels are running out", "Clean air, water, and earth is dissapearing", "Corporations emit carbon footprints", "Trees should be conserved as a natural resource"]
+		"inputSentences": ["I am worried about climate change", "climate change", "The Amazon rainforest is burning", "burning", "amazon", "forest", "Climate change is a hoax", "climate change", "Renewable resources should be conserved", "renewable resources", "conservation", "Decarbonization", "Fossil fuels are running out", "fossil fuels", "Clean air, water, and earth is dissapearing", "clean air", "clean water", "carbon footprints", "Trees are a natural resource", "natural resource", "tree", "We need hurricane preparation", "prepare", "hurricane", "Villages are wiped out from natural disasters", "natural disaster", "environment"]
 		},
 		{"tag": "guns",
-		"inputSentences": ["Gun control is complicated", "Bullet control is restrictive", "Automatic weapons are dangerous", "Disarming people is dangerous", "Armed people are safe", "Ammunition regulation is complicated", "Guns are not toys", "The NRA is corrupt", "School shootings are inevitable", "Self defense needs to be accessible", "The second amendment is a right for society"]
+		"inputSentences": ["Gun control is complicated", "gun control", "gun", "Bullet control is restrictive", "bullet", "bullet control", "Automatic weapons are dangerous", "automatic", "automatic weapons", "Disarming people is dangerous", "disarm", "Armed people are safe", "arm", "Ammunition regulation is complicated", "ammunition", "regulation", "The NRA is corrupt", "NRA", "School shootings are inevitable", "school shooting", "Self defense needs to be accessible", "self defense", "The second amendment is a right for society", "second amendment", "firearms", "arms", "strict"]
 		},
 		{"tag": "taxes",
-		"inputSentences": ["Paying most of your salary to the government is bad", "Taxation is theft", "Taxes pay for government services", "Businesses can't pay taxes", "Corporate bailouts take taxes", "Income tax promotes inequality", "Taxes pay for government workers", "Taxes should pay for schools and hospitals instead of war", "Taxes pay to fix our deficit"]
+		"inputSentences": ["Paying most of your salary to the government is bad", "salary", "Taxation is theft", "taxation", "Taxes pay for government services", "taxes", "government services", "Businesses can't pay taxes", "Corporate bailouts take taxes", "bailouts", "Income tax promotes inequality", "income tax", "inequality", "Taxes pay for government workers", "Taxes should pay for schools and hospitals instead of war", "Taxes pay to fix our deficit", "deficit", "Doctors are needed for everyone"]
 		},
 		{"tag": "health_care",
-		"inputSentences": ["Medicine for everyone should be affordable", "Medicare for all is expensive", "Medicaid is part of social security", "Health insurance is a neccesity", "Obesity is a national epidemic", "Medication should be affordable for everyone"]
+		"inputSentences": ["Medicine for everyone should be affordable", "medicine", "Medicare for all is expensive", "medicare", "medicare for all", "Medicaid is part of social security", "medicaid", "social security", "Health insurance is a neccesity", "health insurance", "insurance", "Obesity is a national epidemic", "obesity", "Medication should be affordable for everyone", "affordable", "health", "healthcare", "privatize"]
 		},
 		{"tag": "gov_size",
-		"inputSentences": ["Government programs increase size", "Large governments give less freedom", "Small governments have less regulation", "Enaged governments work on public works", "Governments interfere in our lives"]
+		"inputSentences": ["Government programs increase size", "government", "size of government", "Large governments give less freedom", "freedom", "Small governments have less regulation", "regulation", "Enaged governments work on public works", "public work", "Governments interfere in our lives", "interfere", "Big government hurts the economy", "economy"]
 		},
 		{"tag": "military",
-		"inputSentences": ["Men die in war to protect citizens", "Military spending is expensive", "Military expenses are huge", "The military is focused on finding oil", "War in foreign countries is expensive"]
+		"inputSentences": ["Men die in war to protect citizens", "kill", "war", "wartime", "protect", "Military spending is expensive", "military", "expensive", "Military expenses are huge", "military spending", "The military is focused on finding oil", "oil", "War in foreign countries is expensive"]
 		},
 		{"tag": "corporate_power",
-		"inputSentences": ["Corporate power destroys small businesses", "Marketing and financial investors matter", "Corporations care about increasing profits", "Monopolies are supposed to be broken up"]
+		"inputSentences": ["Corporate power destroys small businesses", "administration", "abuse of power", "corporate power", "small business", "Marketing and financial investors matter", "invest", "marketing", "Corporations care about increasing profits", "profit", "Monopolies should be broken up", "monopoly", "Companies sell goods and services"]
 		},
 		{"tag": "national_debt",
-		"inputSentences": ["Large amounts of spending lead to large national debts", "Taxation reduced debt", "Creating government projects deepens the debt", "Depressions and recessions occur due to large amounts of debt", "Owing money to other countries hurts our economy"]
+		"inputSentences": ["Large spending leads to national debts", "debt", "spending", "Taxation reduced debt", "taxation", "Government projects deepen debt", "Depressions and recessions occur due to debt", "depression", "recession", "Owing money to foreign countries hurts the economy", "owe money"]
 		},
 		{"tag": "nationalism",
-		"inputSentences": ["Patriotism and nationalism are not the same", "Nationalism makes people justify inferiority", "Excess pride leads to unecessary wars", "Many countries are called the greatest country on earth"]
+		"inputSentences": ["Patriotism and nationalism are different", "patriotism", "nationalism", "Nationalism justifies inferiority", "inferior", "Pride leads to wars", "pride", "Countries are called the greatest country", "Countries include diverse subsets of ethnicities", "diverse", "ethnicity", "Colonies are founded by nations", "colony"]
 		},
 		{"tag": "security",
-		"inputSentences": ["Safety is given at the expense of liberty", "Internet reduces personal security", "Information needs to be kept secure", "Companies like Facebook steal our data", "Emails are not safe to store data", "Phones need to be encrypted to save our information"]
+		"inputSentences": ["social security", "private", "public", "Safety is given at the expense of liberty", "safety", "liberty", "Internet reduces personal security", "personal security", "Information needs to be secure", "information", "data", "secure", "Companies like Facebook steal data", "steal", "Emails are not safe to store data", "Phones should be encrypted to save information", "encrypt"]
 		},
 		{"tag": "abortion",
-		"inputSentences": ["Women should be able to control their own bodies", "Killing children is a sin", "Pro-life advocates ignore lives that are born", "Pro-choice supporters support murdering children", "Religion should stay out of lawmaking"]
+		"inputSentences": ["Women should control their bodies", "women", "bodies", "control", "Killing children is a sin", "kill", "Pro-life advocates ignore born babies", "pro-life", "baby", "babies", "Pro-choice supporters murder children", "pro-choice", "Religion should stay out of lawmaking", "religion", "My baby is my choice", "choice", "life"]
 		},
 		{"tag": "education",
-		"inputSentences": ["Improving access to education brings a smarter population", "Illiteracy is a big problem in under-developed countries", "Jobs go to educated people", "Teachers are very underpaid", "Learning has become specified to certain subjects", "stem fields have the most jobs", "Teaching the younger kids is necessary for a healthy society", "Kids need to be taught economics in school"]
+		"inputSentences": ["Improving access to education brings a smarter population", "education", "access", "smart", "literacy", "illiteracy", "Illiteracy is a problem in under-developed countries", "Educated people have jobs", "jobs", "educated", "Teachers are underpaid", "teachers", "educators", "Learning is specified to specific subjects", "learn", "stem fields have jobs", "stem", "jobs", "Teaching younger kids is good for healthy societies", "Kids should be taught economics in school"]
 		},
 		{"tag": "crime",
-		"inputSentences": ["We have too many people incarcerated in jail", "For-profit jails are corrupt", "Rehabilitation should be a goal for jails", "Police officers should be better trained", "Crime happens too much in cities", "Criminals should be found via facial recognition"]
+		"inputSentences": ["People are incarcerated in jail", "jail", "For-profit jails are corrupt", "for-profit", "Rehabilitation is a goal for jails", "rehabilitate", "Police officers should be better trained", "poilice", "police officers", "Crime happens often in cities", "crime", "Criminals should be discovered via facial recognition", "criminal", "facial recognition"]
 		}
 	]
 }

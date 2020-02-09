@@ -6,31 +6,53 @@ import numpy as np
 
 def main():
     train = False
+    test = False
 
     nn = FaceDetectionNN()
 
     if train:
         nn.train()
 
-    testFiles = glob.glob("./TestImages/*/*")
 
 
-    for file in testFiles:
+    if test:
 
-        img = cv2.imread(file)
-        img = cv2.resize(img, (64, 64),interpolation = cv2.INTER_AREA)
+        candidateFiles = sorted(glob.glob("./testing/*"))
 
-        img = np.asarray([img])
+        labelGeneric = [0]*len(candidateFiles)
+        index = 0
 
-        prediction = nn.predict(img)[0]
-        print(prediction)
+        correct = 0
+        total = 0
+        for candiditeFile in candidateFiles:
+            imageFiles = glob.glob(candiditeFile + '/*')
+            label = labelGeneric.copy()
+            label[index] = 1
 
-        print(np.where(prediction == max(prediction))[0][0])
+            for file in imageFiles:
+                img = cv2.imread(file)
+                img = cv2.resize(img, (64, 64),interpolation = cv2.INTER_AREA)
+                img = np.asarray([img])
 
-    img = cv2.imread(testFiles[2])
+                prediction = nn.predict(img)[0]
+                print(np.where(prediction == max(prediction))[0][0])
+                print(index)
+                print()
+
+                if index == np.where(prediction == max(prediction))[0][0]:
+                    correct += 1
+                total += 1
+
+            index += 1
+
+        print(correct/total, "% correct")
+
+    saliencyFile = "./testing/Joe Biden/Joe Biden-135.jpeg"
+
+    img = cv2.imread(saliencyFile)
     img = cv2.resize(img, (64, 64),interpolation = cv2.INTER_AREA)
 
-    name = "Results/saliency_" + testFiles[2].split('/')[-1]
+    name = "Results/saliency_" + saliencyFile.split('/')[-1]
 
     nn.showSaliencyMap(img, name)
 

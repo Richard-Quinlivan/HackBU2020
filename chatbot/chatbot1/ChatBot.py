@@ -11,9 +11,12 @@ import tensorflow as tf
 import numpy as np
 import pickle
 
-from ModelDesign import ModelDesign
+try:
+    from ModelDesign import ModelDesign
+except:
+    from chatbot1.ModelDesign import ModelDesign
 
-class ChatBot:
+class ChatBot1:
     def __init__(self):
         # Error threshold (we throw out tags under this percentage)
         self.ERROR_THRESHOLD = 0.10
@@ -22,11 +25,20 @@ class ChatBot:
         # Load model
         self.model = self.loadModel(len(self.train_x[0]), len(self.train_y[0]))
 
+    def getSize(self):
+        return len(self.tags)
+
     def loadData(self):
-        # Load pickle and json file data
-        data = pickle.load(open('Model/data.pickle', 'rb'))
-        with open('Training/trainingData.json', 'rb') as json_data:
-            trainingData = json.load(json_data)
+        try:
+            # Load pickle and json file data
+            data = pickle.load(open('chatbot1/Model/data.pickle', 'rb'))
+            with open('chatbot1/Training/trainingData.json', 'rb') as json_data:
+                trainingData = json.load(json_data)
+        except:
+            # Load pickle and json file data
+            data = pickle.load(open('Model/data.pickle', 'rb'))
+            with open('Training/trainingData.json', 'rb') as json_data:
+                trainingData = json.load(json_data)
         # Return pickle and json file data
         return data['tags'], data['words'], data['train_x'], data['train_y'], trainingData
 
@@ -36,7 +48,10 @@ class ChatBot:
 
         # Load model
         model = ModelDesign.getModel(lenX, lenY)
-        model.load('Model/model.tflearn')
+        try:
+            model.load('chatbot1/Model/model.tflearn')
+        except:
+            model.load('Model/model.tflearn')
 
         return model
 

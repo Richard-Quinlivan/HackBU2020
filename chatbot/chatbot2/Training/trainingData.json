@@ -1,9 +1,15 @@
 {"data": [
-		{"tag": "for",
-		"inputSentences": ["Yes, that makes sense", "Yes", "Yea", "I agree", "Indeed", "Yep, that pretty much sums it up for me", "Yep", "For", "I am for that"]
+		{"tag": "strong for",
+		"inputSentences": ["Yes, that makes sense", "Yes", "Yea", "I agree", "Indeed", "Yep, that pretty much sums it up for me", "Yep", "For", "I am for that", "definitely", "certainly", "of course", "absolutely", "We should do that", "That is important", "It is amazing", "great", "fantastic", "100%", "99%", "95%", "90%", "85%", "80%", "It works", "perfect", "well duh", "Everyone is good", "everyone", "functions great", "functions well", "more regulation", "secure enough", "very secure", "perfect size", "big enough", "small enough", "it should be less involved", "less involved", "less involvement", "much more", "more regulation", "pro-choice", "choice", "medicare for all", "expand social security", "more", "less military spending", "spend less", "I am worried", "large debt", "need to lessen debt", "very proud", "most proud", "large pride", "very secure", "secure enough", "lower taxes", "less taxes"]
 		},
-		{"tag": "against",
-		"inputSentences": ["No", "Nah", "No I disgree", "I do not agree", "Nope", "No I hate that", "Fuck I fucking hate that shit", "No way", "Against", "I am against that"]
+		{"tag": "weak for",
+		"inputSentences": ["Yes, that makes sense", "Yes", "Yea", "I agree", "Indeed", "Yep", "For", "I am for that", "somewhat important", "kind of", "a bit", "a little", "good", "fine", "works", "functions", "can be improved", "big enough", "small enough", "good size", "good involvement", "just enough", "well regulated", "reaches enough people", "good idea", "good start", "right idea", "I am not worried", "slightly", "Very little", "I am proud", "secure", "it can be lowered", "good idea", "I like it", "75%", "70%", "65%", "60%", "55%", "50%", "pro-choice", "choice", "why not"]
+		},
+		{"tag": "weak against",
+		"inputSentences": ["50%", "45%", "40%", "35%", "30%", "pro-life", "life", "bad", "no", "do not like", "don't like", "not good", "worse", "less", "lessen", "abortion is bad", "evil", "lessen power", "break up", "update", "rehabilitation", "redo", "update", "reform", "make better", "bad system", "make better", "improve", "could be better", "could be improved", "could do more", "more involved", "more involvement", "bad involvement", "I disagree", "this is bad", "this is not good", "not regulated enough", "more regulation", "not safe", "less guns", "improve health care", "social security", "more military spending", "enough spending", "military functions", "not worried", "no worries", "hakuna matata", "good debt", "keep spending", "not proud", "less proud", "raise taxes", "good taxation amount"]
+		},
+		{"tag": "strong against",
+		"inputSentences": ["No", "Nah", "No I disgree", "I do not agree", "Nope", "No I hate that", "Fuck I fucking hate that shit", "No way", "Against", "I am against that", "25%", "20%", "15%", "10%", "5%", "1%", "0%", "never", "impossible", "definitely not", "horrible", "bad", "trash", "abortion is murder", "abortion is bad", "kill babies", "baby death", "no empowerment", "none", "too much power", "horrible system", "worst", "bad system", "rebuild", "ground up", "rehabilitation", "too much power", "bad education", "not far enough", "bad teaching", "not enough regulation", "no regulation", "improve regulations", "more strict", "greatly reduce", "greatly increase", "improve", "increase", "lessen", "more involved", "it should be more involved in the lives of citizens", "more involvement", "medicare for all", "improve healthcare", "give to more people", "more military spending", "spend more", "increase spending", "more debt", "no worries", "hakuna matata", "very proud", "pride", "much pride", "so proud", "not secure", "no security", "the absolute worst", "raise taxes", "not enough taxes", "more spending"]
 		}
 	]
 }
