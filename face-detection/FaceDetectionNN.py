@@ -15,7 +15,7 @@ import numpy as np
 
 import scipy.misc
 
-# from vis.visualization import visualize_saliency
+from vis.visualization import visualize_saliency
 import matplotlib.pyplot as plt
 import scipy.ndimage as ndimage
 
@@ -38,6 +38,16 @@ class FaceDetectionNN():
         self.model.add(Dropout(0.2))
 
         self.model.add(Conv2D(128, activation='relu',padding='same',kernel_size=(3, 3)));
+        self.model.add(MaxPooling2D(pool_size=(2, 2)))
+        self.model.add(BatchNormalization())
+        self.model.add(Dropout(0.2))
+
+        self.model.add(Conv2D(256, activation='relu',padding='same',kernel_size=(3, 3)));
+        self.model.add(MaxPooling2D(pool_size=(2, 2)))
+        self.model.add(BatchNormalization())
+        self.model.add(Dropout(0.2))
+
+        self.model.add(Conv2D(512, activation='relu',padding='same',kernel_size=(3, 3)));
         self.model.add(MaxPooling2D(pool_size=(2, 2)))
         self.model.add(BatchNormalization())
         self.model.add(Dropout(0.2))
@@ -89,7 +99,8 @@ class FaceDetectionNN():
 
     def showSaliencyMap(self, img, name):
         grads = visualize_saliency(self.model, -1, filter_indices = 0, seed_input=img)
-        smoothe = ndimage.gaussian_filter(grads[:,:], sigma=3)
+        # smoothe = ndimage.gaussian_filter(grads[:,:], sigma=3)
+        smoothe = cv2.GaussianBlur(grads, (3,3), cv2.BORDER_DEFAULT)
 
         plt.imshow(img)
         plt.imshow(smoothe, alpha = .6)
