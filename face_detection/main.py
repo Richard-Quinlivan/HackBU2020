@@ -5,9 +5,9 @@ import numpy as np
 
 
 def main():
-    train = True
+    train = False
     test = True
-    detect_saliency = False
+    detect_saliency = True
 
     nn = FaceDetectionNN(train)
 
@@ -49,8 +49,8 @@ def main():
 
     if detect_saliency:
 
-        saliencyFile = "./testing/Mark Sanford/Mark Sanford-135.jpeg"
-        # saliencyFile = "./Other/Niko.jpg"
+        saliencyFile = "./testing/Tulsi Gabbard/Tulsi Gabbard-138.jpeg"
+        # saliencyFile = "./Other/Bernie Sanders-140 copy.jpeg"
 
         img = cv2.imread(saliencyFile)
         img = cv2.resize(img, (64, 64),interpolation = cv2.INTER_AREA)
