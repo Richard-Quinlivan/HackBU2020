@@ -35,6 +35,7 @@ a{
   color: #008BFF;
   margin-right: 10px;
   font-weight: bold;
+  font-size: 30px;
 }
 
 
@@ -47,4 +48,14 @@ a{
 
 .caption{
   font-size: 12px;
+}
+
+.face2button{
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image{
+  width: 100%;
 }
