@@ -22,11 +22,14 @@ import scipy.ndimage as ndimage
 
 
 class FaceDetectionNN():
-    modelFile = "FaceDetectionModel.h5"
+    try:
+        modelFile = "face_detection/FaceDetectionModel.h5"
+    except:
+        modelFile = "FaceDetectionModel.h5"
     def __init__(self, needsTraining):
         if not needsTraining:
             try:
-                self.model = keras.models.load_model("face-detection/" + self.modelFile);
+                self.model = keras.models.load_model("face_detection/" + self.modelFile);
             except:
                 self.model = keras.models.load_model(self.modelFile);
         else:
@@ -65,7 +68,10 @@ class FaceDetectionNN():
         imageArray = []
         labelArray = []
 
-        candidateFiles = sorted(glob.glob("./training/*"))
+        try:
+            candidateFiles = sorted(glob.glob("./face_detection/training/*"))
+        except:
+            candidateFiles = sorted(glob.glob("./training/*"))
         print(candidateFiles)
 
         labelGeneric = [0]*len(candidateFiles)
