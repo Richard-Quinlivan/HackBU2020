@@ -53,7 +53,7 @@ class ChatBot2:
         # Load model
         model = ModelDesign.getModel(lenX, lenY)
         try:
-            model.load('chatbot/chatbot2/Model/model.tflearn'')
+            model.load('chatbot/chatbot2/Model/model.tflearn')
         except:
             try:
                 model.load('chatbot2/Model/model.tflearn')
