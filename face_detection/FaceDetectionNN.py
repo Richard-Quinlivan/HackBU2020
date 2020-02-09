@@ -22,10 +22,8 @@ import scipy.ndimage as ndimage
 
 
 class FaceDetectionNN():
-    try:
-        modelFile = "face_detection/FaceDetectionModel.h5"
-    except:
-        modelFile = "FaceDetectionModel.h5"
+    modelFile = "FaceDetectionModel.h5"
+    
     def __init__(self, needsTraining):
         if not needsTraining:
             try:
