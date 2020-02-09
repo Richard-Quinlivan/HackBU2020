@@ -3,6 +3,8 @@ import time
 import cv2
 import pickle
 from DataHolder import DataHolder
+from face_detection.FaceDetectionNN import FaceDetectionNN
+
 
 
 # app = Flask(static_folder="/Users/richardquinlivan4444/comp_sci/hackathon/HackBU2020/static", __name__)
@@ -17,6 +19,11 @@ def Home():
 @app.route("/face.html")
 @app.route("/face", methods=["GET", "POST"])
 def face():
+    return render_template("face.html")
+
+@app.route("/face2.html")
+@app.route("/face2", methods=["GET", "POST"])
+def face2():
     cam = cv2.VideoCapture(0)
 
     time.sleep(1)
@@ -27,11 +34,11 @@ def face():
 
     cam.release()
     cv2.destroyAllWindows()
-    return render_template("face.html")
+    return render_template("face2.html")
 
-@app.route("/face2.html")
-@app.route("/face2", methods=["GET", "POST"])
-def face2():
+@app.route("/face3.html")
+@app.route("/face3", methods=["GET", "POST"])
+def face3():
     fd = FaceDetectionNN(False)
 
     saliencyFile = "./static/opencv_frame.png"
@@ -41,7 +48,7 @@ def face2():
 
     name = "./static/saliency_" + saliencyFile.split('/')[-1]
 
-    nn.showSaliencyMap(img, name)
+    fd.showSaliencyMap(img, name)
 
     prediction = nn.predict(np.asarray([img]))[0]
     index = np.where(prediction == max(prediction))[0][0]
@@ -50,8 +57,12 @@ def face2():
 
     print(candidateFiles[index].split('/')[-1])
 
-    return render_template("Home.html")
+    return render_template("face3.html")
 
+@app.route("/about.html")
+@app.route("/about", methods=["GET", "POST"])
+def about():
+    return render_template("about.html")
 
 @app.route("/question1.html")
 def question1():
