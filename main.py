@@ -60,7 +60,7 @@ def face3():
     result = candidateFiles[index].split('/')[-1]
     path = "../static/" + result + ".jpeg"
 
-    return render_template("face3.html")
+    return render_template("face3.html", path = path)
 
 @app.route("/about.html")
 @app.route("/about", methods=["GET", "POST"])
