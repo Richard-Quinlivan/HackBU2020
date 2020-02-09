@@ -5,9 +5,11 @@
 try:
     from chatbot.chatbot1.ChatBot import ChatBot1
     from chatbot.chatbot2.ChatBot import ChatBot2
+    import chatbot.candidateData.CandidateCalcs
 except:
     from chatbot1.ChatBot import ChatBot1
     from chatbot2.ChatBot import ChatBot2
+    import candidateData.CandidateCalcs
 
 class CivicBot:
     def __init__(self):
@@ -78,4 +80,4 @@ class CivicBot:
         return "I'm getting some good information! Could you tell me about one or two more policies that are important to you?"
 
     def getFinal():
-        return self.opinion
+        return CandidateCalcs.findClosest([[2,3,4,3,3,2,1,4,3,1,4,3,3,4], [1,3,4,2,4,1,1,3,3,1,4,3,3,4], [1,4,4,4,4,1,1,3,4,1,4,4,1,4], [1,3,4,3,3,1,1,4,4,4,4,3,1,4], [2,3,3,3,3,2,1,4,3,2,3,3,2,3], [4,1,1,1,1,4,4,1,1,4,1,1,4,2], [1,4,4,4,4,1,1,4,4,1,4,4,1,1], [2,3,4,3,1,2,2,3,3,4,3,3,3,3], [4,2,2,2,3,3,3,2,1,3,2,2,4,2], [1,3,4,2,2,1,1,4,3,1,4,4,1,4], [2,3,4,4,3,1,1,4,3,2,4,4,1,4], [4,2,2,2,4,4,4,2,1,3,1,2,4,2], [1,4,4,2,2,1,1,4,2,4,4,4,2,4], [2,3,3,2,3,2,2,4,3,2,3,3,2,4], [1,4,4,2,3,2,2,3,3,1,4,3,2,3], [3,3,4,3,4,1,1,3,3,2,4,3,1,4], [1,3,4,4,3,2,2,4,3,1,3,4,3]], self.opinion)
