@@ -15,6 +15,7 @@ app = Flask(__name__)
 
 @app.route("/Home.html")
 def Home():
+    DataHolder.reset()
     return render_template("home.html")
 
 @app.route("/face.html")
@@ -64,10 +65,12 @@ def face3():
 @app.route("/about.html")
 @app.route("/about", methods=["GET", "POST"])
 def about():
+    DataHolder.reset()
     return render_template("about.html")
 
 @app.route("/question1.html")
 def question1():
+    DataHolder.reset()
     return render_template("question1.html", prevOutput1 = DataHolder.first)
 
 @app.route("/question1", methods=["GET", "POST"])
