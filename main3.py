@@ -25,7 +25,7 @@ def face():
 
 @app.route("/question1.html")
 def question1():
-    return render_template("question1.html")
+    return render_template("question1.html", prevOutput1 = DataHolder.first)
 
 @app.route("/question1", methods=["GET", "POST"])
 def getValue1():
