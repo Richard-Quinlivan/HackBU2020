@@ -31,14 +31,20 @@ class ChatBot1:
     def loadData(self):
         try:
             # Load pickle and json file data
-            data = pickle.load(open('chatbot1/Model/data.pickle', 'rb'))
-            with open('chatbot1/Training/trainingData.json', 'rb') as json_data:
+            data = pickle.load(open('chatbot/chatbot1/Model/data.pickle', 'rb'))
+            with open('chatbot/chatbot1/Training/trainingData.json', 'rb') as json_data:
                 trainingData = json.load(json_data)
         except:
-            # Load pickle and json file data
-            data = pickle.load(open('Model/data.pickle', 'rb'))
-            with open('Training/trainingData.json', 'rb') as json_data:
-                trainingData = json.load(json_data)
+            try:
+                # Load pickle and json file data
+                data = pickle.load(open('chatbot1/Model/data.pickle', 'rb'))
+                with open('chatbot1/Training/trainingData.json', 'rb') as json_data:
+                    trainingData = json.load(json_data)
+            except:
+                # Load pickle and json file data
+                data = pickle.load(open('Model/data.pickle', 'rb'))
+                with open('Training/trainingData.json', 'rb') as json_data:
+                    trainingData = json.load(json_data)
         # Return pickle and json file data
         return data['tags'], data['words'], data['train_x'], data['train_y'], trainingData
 
@@ -49,9 +55,12 @@ class ChatBot1:
         # Load model
         model = ModelDesign.getModel(lenX, lenY)
         try:
-            model.load('chatbot1/Model/model.tflearn')
+            model.load('chatbot/chatbot1/Model/model.tflearn')
         except:
-            model.load('Model/model.tflearn')
+            try:
+                model.load('chatbot1/Model/model.tflearn')
+            except:
+                model.load('Model/model.tflearn')
 
         return model
 
