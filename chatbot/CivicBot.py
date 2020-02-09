@@ -5,17 +5,18 @@
 try:
     from chatbot.chatbot1.ChatBot import ChatBot1
     from chatbot.chatbot2.ChatBot import ChatBot2
-    import chatbot.candidateData.CandidateCalcs
+    from chatbot.candidateData.CandidateCalcs import CandCalc
 except:
     from chatbot1.ChatBot import ChatBot1
     from chatbot2.ChatBot import ChatBot2
-    import candidateData.CandidateCalcs
+    from candidateData.CandidateCalcs import CandCalc
 
 class CivicBot:
     def __init__(self):
         # Constants
         self.BOT_ONE = ChatBot1()
         self.BOT_TWO = ChatBot2()
+        self.CAND_CALC = CandCalc()
         self.DONE_STATE = 3
         self.FOLLOW_UP_QUESTIONS = ['Could you tell me a bit about your stance on abortions in America?', 'What is your opinion on empowering large corporations in America?', 'What do you think about the American prison system?', 'Tell about your opinions on the American education system.', 'Could you tell me about your opinions regarding the environment?', 'What do you think about the size of our government? Should the government be less involved in the lives of its citizens?', 'Tell me more about your stance on gun ownership in America.', 'What do you think of the American health care system?', 'How would you feel if the American government cut down on military spending?', 'Does the national debt in America worry you?', 'Are you proud to be an American right now?', 'Do you think America has secure borders?', 'What do you think would happen if the government lowered the amount of taxes everyone has to pay?']
         # Variables
@@ -79,5 +80,5 @@ class CivicBot:
             return "When it comes to politics, what else is important to you? Once again, feel free to speak candidly."
         return "I'm getting some good information! Could you tell me about one or two more policies that are important to you?"
 
-    def getFinal():
-        return CandidateCalcs.findClosest([[2,3,4,3,3,2,1,4,3,1,4,3,3,4], [1,3,4,2,4,1,1,3,3,1,4,3,3,4], [1,4,4,4,4,1,1,3,4,1,4,4,1,4], [1,3,4,3,3,1,1,4,4,4,4,3,1,4], [2,3,3,3,3,2,1,4,3,2,3,3,2,3], [4,1,1,1,1,4,4,1,1,4,1,1,4,2], [1,4,4,4,4,1,1,4,4,1,4,4,1,1], [2,3,4,3,1,2,2,3,3,4,3,3,3,3], [4,2,2,2,3,3,3,2,1,3,2,2,4,2], [1,3,4,2,2,1,1,4,3,1,4,4,1,4], [2,3,4,4,3,1,1,4,3,2,4,4,1,4], [4,2,2,2,4,4,4,2,1,3,1,2,4,2], [1,4,4,2,2,1,1,4,2,4,4,4,2,4], [2,3,3,2,3,2,2,4,3,2,3,3,2,4], [1,4,4,2,3,2,2,3,3,1,4,3,2,3], [3,3,4,3,4,1,1,3,3,2,4,3,1,4], [1,3,4,4,3,2,2,4,3,1,3,4,3]], self.opinion)
+    def getFinal(self):
+        return self.CAND_CALC.findClosest([[2,3,4,3,3,2,1,4,3,1,4,3,3,4], [1,3,4,2,4,1,1,3,3,1,4,3,3,4], [1,4,4,4,4,1,1,3,4,1,4,4,1,4], [1,3,4,3,3,1,1,4,4,4,4,3,1,4], [2,3,3,3,3,2,1,4,3,2,3,3,2,3], [4,1,1,1,1,4,4,1,1,4,1,1,4,2], [1,4,4,4,4,1,1,4,4,1,4,4,1,1], [2,3,4,3,1,2,2,3,3,4,3,3,3,3], [4,2,2,2,3,3,3,2,1,3,2,2,4,2], [1,3,4,2,2,1,1,4,3,1,4,4,1,4], [2,3,4,4,3,1,1,4,3,2,4,4,1,4], [4,2,2,2,4,4,4,2,1,3,1,2,4,2], [1,4,4,2,2,1,1,4,2,4,4,4,2,4], [2,3,3,2,3,2,2,4,3,2,3,3,2,4], [1,4,4,2,3,2,2,3,3,1,4,3,2,3], [3,3,4,3,4,1,1,3,3,2,4,3,1,4], [1,3,4,4,3,2,2,4,3,1,3,4,3]], self.opinion)

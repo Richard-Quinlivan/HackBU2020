@@ -241,7 +241,10 @@ def getValue14():
 def getValue15():
     input = request.form["input"]
     DataHolder.convo.append(input)
-    DataHolder.convo.append(DataHolder.getSentence(input))
+    next = DataHolder.getSentence(input)
+    if next == "NULL":
+        return render_template(DataHolder.findFinal())
+    DataHolder.convo.append(next)
 
     return render_template("question15.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16], prevOutput10 = DataHolder.convo[17], prevInput10 = DataHolder.convo[18], prevOutput11 = DataHolder.convo[19], prevInput11 = DataHolder.convo[20], prevOutput12 = DataHolder.convo[21], prevInput12 = DataHolder.convo[22], prevOutput13 = DataHolder.convo[23], prevInput13 = DataHolder.convo[24], prevOutput14 = DataHolder.convo[25], prevInput14 = DataHolder.convo[26], prevOutput15 = DataHolder.convo[27], prevInput15 = DataHolder.convo[28], prevOutput16 = DataHolder.convo[29])
 
