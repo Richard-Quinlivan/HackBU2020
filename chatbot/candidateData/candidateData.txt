@@ -1,0 +1,255 @@
+Amy Klobuchar {2,3,4,3,3,2,1,4,3,1,4,3,3,4}
+  Abortion: 2
+  Corporate Power: 3
+  Prison: 4
+  Education: 3
+  Environment: 3
+  Government Size: 2
+  Government Involvement: 1
+  Guns: 4
+  Health: 3
+  Military: 1
+  Debt: 4
+  Pride: 3
+  Borders: 3
+  Taxes: 4
+Andrew Yang {1,3,4,2,4,1,1,3,3,1,4,3,3,4}
+  Abortion: 1
+  Corporate Power: 3
+  Prison: 4
+  Education: 2
+  Environment: 4
+  Government Size: 1
+  Government Involvement: 1
+  Guns: 3
+  Health: 3
+  Military: 1
+  Debt: 4
+  Pride: 3
+  Borders: 3
+  Taxes: 4
+Bernie Sanders {1,4,4,4,4,1,1,3,4,1,4,4,1,4}
+  Abortion: 1
+  Corporate Power: 4
+  Prison: 4
+  Education: 4
+  Environment: 4
+  Government Size: 1
+  Government Involvement: 1
+  Guns: 3
+  Health: 4
+  Military: 1
+  Debt: 4
+  Pride: 4
+  Borders: 1
+  Taxes: 4
+Cory Booker {1,3,4,3,3,1,1,4,4,4,4,3,1,4}
+  Abortion: 1
+  Corporate Power: 3
+  Prison: 4
+  Education: 3
+  Environment: 3
+  Government Size: 1
+  Government Involvement: 1
+  Guns: 4
+  Health: 4
+  Military: 4
+  Debt: 4
+  Pride: 3
+  Borders: 1
+  Taxes: 4
+Deval Patrick {2,3,3,3,3,2,1,4,3,2,3,3,2,3}
+  Abortion: 2
+  Corporate Power: 3
+  Prison: 3
+  Education: 3
+  Environment: 3
+  Government Size: 2
+  Government Involvement: 1
+  Guns: 4
+  Health: 3
+  Military: 2
+  Debt: 3
+  Pride: 3
+  Borders: 2
+  Taxes: 3
+Donald Trump {4,1,1,1,1,4,4,1,1,4,1,1,4,2}
+  Abortion: 4
+  Corporate Power: 1
+  Prison: 1
+  Education: 1
+  Environment: 1
+  Government Size: 4
+  Government Involvement: 4
+  Guns: 1
+  Health: 1
+  Military: 4
+  Debt: 1
+  Pride: 1
+  Borders: 4
+  Taxes: 2
+Elizabeth Warren {1,4,4,4,4,1,1,4,4,1,4,4,1,1}
+  Abortion: 1
+  Corporate Power: 4
+  Prison: 4
+  Education: 4
+  Environment: 4
+  Government Size: 1
+  Government Involvement: 1
+  Guns: 4
+  Health: 4
+  Military: 1
+  Debt: 4
+  Pride: 4
+  Borders: 1
+  Taxes: 1
+Joe Biden {2,3,4,3,1,2,2,3,3,4,3,3,3,3}
+  Abortion: 2
+  Corporate Power: 3
+  Prison: 4
+  Education: 3
+  Environment: 1
+  Government Size: 2
+  Government Involvement: 2
+  Guns: 3
+  Health: 3
+  Military: 4
+  Debt: 3
+  Pride: 3
+  Borders: 3
+  Taxes: 3
+Joe Walsh {4,2,2,2,3,3,3,2,1,3,2,2,4,2}
+  Abortion: 4
+  Corporate Power: 2
+  Prison: 2
+  Education: 2
+  Environment: 3
+  Government Size: 3
+  Government Involvement: 3
+  Guns: 2
+  Health: 1
+  Military: 3
+  Debt: 2
+  Pride: 2
+  Borders: 4
+  Taxes: 2
+Kamala Harris {1,3,4,2,2,1,1,4,3,1,4,4,1,4}
+  Abortion: 1
+  Corporate Power: 3
+  Prison: 4
+  Education: 2
+  Environment: 2
+  Government Size: 1
+  Government Involvement: 1
+  Guns: 4
+  Health: 3
+  Military: 1
+  Debt: 4
+  Pride: 4
+  Borders: 1
+  Taxes: 4
+Marianne Williamson {2,3,4,4,3,1,1,4,3,2,4,4,1,4}
+  Abortion: 2
+  Corporate Power: 3
+  Prison: 4
+  Education: 4
+  Environment: 3
+  Government Size: 1
+  Government Involvement: 1
+  Guns: 4
+  Health: 3
+  Military: 2
+  Debt: 4
+  Pride: 4
+  Borders: 1
+  Taxes: 4
+Mark Sanford {4,2,2,2,4,4,4,2,1,3,1,2,4,2}
+  Abortion: 4
+  Corporate Power: 2
+  Prison: 2
+  Education: 2
+  Environment: 4
+  Government Size: 4
+  Government Involvement: 4
+  Guns: 2
+  Health: 1
+  Military: 3
+  Debt: 1
+  Pride: 2
+  Borders: 4
+  Taxes: 2
+Michael Bennet {1,4,4,2,2,1,1,4,2,4,4,4,2,4}
+  Abortion: 1
+  Corporate Power: 4
+  Prison: 4
+  Education: 2
+  Environment: 2
+  Government Size: 1
+  Government Involvement: 1
+  Guns: 4
+  Health: 2
+  Military: 4
+  Debt: 4
+  Pride: 4
+  Borders: 2
+  Taxes: 4
+Michael Bloomberg {2,3,3,2,3,2,2,4,3,2,3,3,2,4}
+  Abortion: 2
+  Corporate Power: 3
+  Prison: 3
+  Education: 2
+  Environment: 3
+  Government Size: 2
+  Government Involvement: 2
+  Guns: 4
+  Health: 3
+  Military: 2
+  Debt: 3
+  Pride: 3
+  Borders: 2
+  Taxes: 4
+Pete Buttigieg {1,4,4,2,3,2,2,3,3,1,4,3,2,3}
+  Abortion: 1
+  Corporate Power: 4
+  Prison: 4
+  Education: 2
+  Environment: 3
+  Government Size: 2
+  Government Involvement: 2
+  Guns: 3
+  Health: 3
+  Military: 1
+  Debt: 4
+  Pride: 3
+  Borders: 2
+  Taxes: 3
+Tom Steyer {3,3,4,3,4,1,1,3,3,2,4,3,1,4}
+  Abortion: 3
+  Corporate Power: 3
+  Prison: 4
+  Education: 3
+  Environment: 4
+  Government Size: 1
+  Government Involvement: 1
+  Guns: 3
+  Health: 3
+  Military: 2
+  Debt: 4
+  Pride: 3
+  Borders: 1
+  Taxes: 4
+Tulsi Gabbard {1,3,4,4,3,2,2,4,3,1,3,4,3}
+  Abortion: 1
+  Corporate Power: 3
+  Prison: 4
+  Education: 4
+  Environment: 3
+  Government Size: 2
+  Government Involvement: 2
+  Guns: 4
+  Health: 3
+  Military: 1
+  Debt: 3
+  Pride: 4
+  Borders: 2
+  Taxes: 3

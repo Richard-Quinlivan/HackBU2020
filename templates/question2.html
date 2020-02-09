@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
@@ -10,11 +9,11 @@
 		<form action ="/question2" method="POST">
 		<fieldset>
 			<br>
-				<div id = "Prev input 1">ChatBot: </div>
+				<div id = "Prev input 1">ChatBot: {{prevOutput1}} </div>
 			<br>
 				<div id = "Text input">You: {{prevInput1}}</div>
 			<br>
-				<div id = "Text input ">ChatBot: </div>
+				<div id = "Text input ">ChatBot: {{prevOutput2}} </div>
 			<br>
 				<textarea type = "paragraph_text" cols="50" rows="10" type="text" name="input" value="Type Something"></textarea>
 			<br>

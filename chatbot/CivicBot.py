@@ -19,7 +19,6 @@ class CivicBot:
         # Variables
         self.opinion = [0] * self.BOT_ONE.getSize() # STATE: 0 = NOT SPECIFIED, 1 = STRONG FOR, 2 = WEAK FOR, 3 = WEAK AGAINST, 4 = STRONG AGAINST
         self.done = 0; # STATE: 0 = JUST STARTED, 1 = ON THE SECOND QUESTION, 2 = ON THE THIRD QUESTION, 3 = DONE
-        #self.done = 0; # STATE: 0 = JUST STARTED, 1 = ON THE SECOND QUESTION, 2 = DONE
         self.follow_ups = []
         self.currentOpinionState = 0;
         self.opinionTime = False;
@@ -28,9 +27,14 @@ class CivicBot:
         self.alreadyTried = False
 
     def reset(self):
-        self.opinion = [0] * self.BOT_ONE.getSize()
-        self.done = 0
+        self.opinion = [0] * self.BOT_ONE.getSize() # STATE: 0 = NOT SPECIFIED, 1 = STRONG FOR, 2 = WEAK FOR, 3 = WEAK AGAINST, 4 = STRONG AGAINST
+        self.done = 0; # STATE: 0 = JUST STARTED, 1 = ON THE SECOND QUESTION, 2 = ON THE THIRD QUESTION, 3 = DONE
         self.follow_ups = []
+        self.currentOpinionState = 0;
+        self.opinionTime = False;
+        self.notEnoughInfo = False;
+        self.knowledgeGain = 0;
+        self.alreadyTried = False
 
     def getReply(self, sentence):
         if self.opinionTime:
@@ -72,5 +76,6 @@ class CivicBot:
         if self.done <= 1:
             return "When it comes to politics, what else is important to you? Once again, feel free to speak candidly."
         return "I'm getting some good information! Could you tell me about one or two more policies that are important to you?"
+
     def getFinal():
         return self.opinion
