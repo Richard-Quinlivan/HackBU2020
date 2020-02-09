@@ -10,10 +10,15 @@ A Candidate Like You is a dual neural network website aim'ed at finding you the 
  - Two neural networks analyze speech patters, language use, and vocabulary to create an opinion profile on the user
  - Once enough data has been gathered, the user is shown the politician that best matches their custom opinion profile
 
- ![Niko](./ReadmeImages/chatbot.png)
+ ![Chatbot](./ReadmeImages/chatbot.png)
  <div style="text-align:center">
  Example of ChatBot conversation
  </div>
+
+ <p float="left">
+   <img src="./ReadmeImages/ChatBot1.png" width="49%" />
+   <img src="./ReadmeImages/ChatBot2.png" width="49%" />
+ </p>
 
 
 ## Finding most look-alike candidate:
@@ -28,3 +33,7 @@ A Candidate Like You is a dual neural network website aim'ed at finding you the 
 <div style="text-align:center">
 Example of image saliency
 </div>
+<br>
+<p align= "center">
+  <img src="./ReadmeImages/CNN.png" width="70%" />
+</p>
