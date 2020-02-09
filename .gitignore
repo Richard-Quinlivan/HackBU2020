@@ -1,1 +1,9 @@
-.DS_Store
+*.DS_Store
+*.pyc
+/face-detection/testing/*.jpeg
+/face-detection/training/*.jpeg
+/face-detection/OldStuff/*/*/*.jpeg
+
+/face-detection/testing/*.png
+/face-detection/training/*.png
+/face-detection/OldStuff/*/*/*.png
