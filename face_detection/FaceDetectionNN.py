@@ -26,6 +26,7 @@ class FaceDetectionNN():
 
     def __init__(self, needsTraining):
         if not needsTraining:
+            self.model = keras.models.load_model("face_detection/" + self.modelFile);
             try:
                 self.model = keras.models.load_model("face_detection/" + self.modelFile);
             except:
