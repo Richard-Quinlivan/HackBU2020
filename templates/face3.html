@@ -3,23 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <title>face3</title>
+        <link rel="stylesheet" href="../static/stylesheet1.css"/>
     </head>
     <body >
 
       <center>
   		<div id = "Looklike">You look like {{name}}!</div>
   <br>
-    <div class="image123">
-      <div style="float:left;margin-right:5px;">
-          <img src = "../static/saliency_opencv_frame.png" alt="Your Picture!" style="width:49%">
+  <div class="image123">
+      <div class = "sidebyside">
+          <img src = "../static/saliency_opencv_frame.png" alt="Your Picture!" style="width:100%">
       </div>
-      <div style="float:left;margin-right:5px;">
-          <img src = "{{path}}" alt="Your Picture!" style="width:49%">
+      <div class = "sidebyside">
+          <img src = "{{path}}" alt="Your Picture!" style="width:100%">
       </div>
   </div>
+
+
   <br>
     <a href = "face.html" ><button type="button"> Retake your picture</button></a>
     <a href = "Home.html" ><button type="button">Return to Home</button></a>
-    <br>
+  <br>
+
  </body>
 </html>

@@ -1,0 +1,40 @@
+body {
+  background: #FF6C4D;
+}
+
+button {
+  background-color: #29DFFF;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+
+button:hover {
+  background-color: #0CB2EC;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+
+.sidebyside {
+  float: left;
+  width: 48%;
+  height: 48%;
+  padding: 5px;
+}
