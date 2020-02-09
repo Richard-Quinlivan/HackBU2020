@@ -1,12 +1,15 @@
 from flask import Flask, render_template, request
 import pickle
+from chatbot.CivicBot import CivicBot
+
+
+
+bot = CivicBot()
 
 app = Flask(__name__)
 @app.route("/Home.html")
 
 @app.route("/")
-
-
 
 def Home():
     return render_template("Home.html")
@@ -240,6 +243,8 @@ def getValue15():
     input = request.form["input"]
 
     return render_template("question4.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = prevIn10, prevInput11 = prevIn11, prevInput12 = prevIn12, prevInput13 = prevIn13, prevInput14 = prevIn14, prevInput15 = input)
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)

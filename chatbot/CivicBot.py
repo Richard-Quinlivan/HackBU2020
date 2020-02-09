@@ -2,8 +2,12 @@
 ## CivicBot (uses ChatBot 1 & 2)
 ## No need to run this file directly
 
-from chatbot1.ChatBot import ChatBot1
-from chatbot2.ChatBot import ChatBot2
+try:
+    from chatbot.chatbot1.ChatBot import ChatBot1
+    from chatbot.chatbot2.ChatBot import ChatBot2
+except:
+    from chatbot1.ChatBot import ChatBot1
+    from chatbot2.ChatBot import ChatBot2
 
 class CivicBot:
     def __init__(self):
