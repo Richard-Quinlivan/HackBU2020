@@ -18,4 +18,10 @@ class DataHolder:
     # Static methods
     @staticmethod
     def getSentence(sentence):
-        return bot.getReply(sentence)
+        return DataHolder.bot.getReply(sentence)
+
+
+    @staticmethod
+    def reset():
+        DataHolder.convo = []
+        DataHolder.bot.reset()

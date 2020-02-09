@@ -26,7 +26,7 @@ def getValue1():
     DataHolder.convo.append(input)
     DataHolder.convo.append(DataHolder.getSentence(input))
 
-    return render_template("question2.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0])
+    return render_template("question2.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1])
 
 @app.route("/question2.html")
 @app.route("/question2", methods=["Get", "POST"])
@@ -35,7 +35,7 @@ def getValue2():
     DataHolder.convo.append(input)
     DataHolder.convo.append(DataHolder.getSentence(input))
 
-    return render_template("question3.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2])
+    return render_template("question3.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3])
 
 @app.route("/question3.html")
 @app.route("/question3", methods=["GET", "POST"])
@@ -44,7 +44,7 @@ def getValue3():
     DataHolder.convo.append(input)
     DataHolder.convo.append(DataHolder.getSentence(input))
 
-    return render_template("question4.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4])
+    return render_template("question4.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5])
 
 @app.route("/question4.html")
 @app.route("/question4", methods=["GET", "POST"])
@@ -53,7 +53,7 @@ def getValue4():
     DataHolder.convo.append(input)
     DataHolder.convo.append(DataHolder.getSentence(input))
 
-    return render_template("question5.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6])
+    return render_template("question5.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7])
 
 @app.route("/question5.html")
 @app.route("/question5", methods=["GET", "POST"])
@@ -64,7 +64,7 @@ def getValue5():
 
     input = request.form["input"]
 
-    return render_template("question6.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8])
+    return render_template("question6.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9])
 
 @app.route("/question6.html")
 @app.route("/question6", methods=["GET", "POST"])
@@ -73,7 +73,7 @@ def getValue6():
     DataHolder.convo.append(input)
     DataHolder.convo.append(DataHolder.getSentence(input))
 
-    return render_template("question7.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10])
+    return render_template("question7.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11])
 
 @app.route("/question7.html")
 @app.route("/question7", methods=["GET", "POST"])
@@ -82,7 +82,7 @@ def getValue7():
     DataHolder.convo.append(input)
     DataHolder.convo.append(DataHolder.getSentence(input))
 
-    return render_template("question8.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12])
+    return render_template("question8.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13])
 
 @app.route("/question8.html")
 @app.route("/question8", methods=["GET", "POST"])
@@ -91,7 +91,7 @@ def getValue8():
     DataHolder.convo.append(input)
     DataHolder.convo.append(DataHolder.getSentence(input))
 
-    return render_template("question9.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14])
+    return render_template("question9.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15])
 
 @app.route("/question9.html")
 @app.route("/question9", methods=["GET", "POST"])
@@ -100,7 +100,7 @@ def getValue9():
     DataHolder.convo.append(input)
     DataHolder.convo.append(DataHolder.getSentence(input))
 
-    return render_template("question10.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16])
+    return render_template("question10.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16], prevOutput10 = DataHolder.convo[17])
 
 @app.route("/question10.html")
 @app.route("/question10", methods=["GET", "POST"])
@@ -109,7 +109,7 @@ def getValue10():
     DataHolder.convo.append(input)
     DataHolder.convo.append(DataHolder.getSentence(input))
 
-    return render_template("question11.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16], prevOutput10 = DataHolder.convo[17], prevInput10 = DataHolder.convo[18])
+    return render_template("question11.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16], prevOutput10 = DataHolder.convo[17], prevInput10 = DataHolder.convo[18], prevOutput11 = DataHolder.convo[19])
 
 @app.route("/question11.html")
 @app.route("/question11", methods=["GET", "POST"])
@@ -118,7 +118,7 @@ def getValue11():
     DataHolder.convo.append(input)
     DataHolder.convo.append(DataHolder.getSentence(input))
 
-    return render_template("question12.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16], prevOutput10 = DataHolder.convo[17], prevInput10 = DataHolder.convo[18], prevOutput11 = DataHolder.convo[19], prevInput11 = DataHolder.convo[20])
+    return render_template("question12.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16], prevOutput10 = DataHolder.convo[17], prevInput10 = DataHolder.convo[18], prevOutput11 = DataHolder.convo[19], prevInput11 = DataHolder.convo[20], prevOutput12 = DataHolder.convo[21])
 
 @app.route("/question12.html")
 @app.route("/question12", methods=["GET", "POST"])
@@ -127,7 +127,7 @@ def getValue12():
     DataHolder.convo.append(input)
     DataHolder.convo.append(DataHolder.getSentence(input))
 
-    return render_template("question13.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16], prevOutput10 = DataHolder.convo[17], prevInput10 = DataHolder.convo[18], prevOutput11 = DataHolder.convo[19], prevInput11 = DataHolder.convo[20], prevOutput12 = DataHolder.convo[21], prevInput12 = DataHolder.convo[22])
+    return render_template("question13.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16], prevOutput10 = DataHolder.convo[17], prevInput10 = DataHolder.convo[18], prevOutput11 = DataHolder.convo[19], prevInput11 = DataHolder.convo[20], prevOutput12 = DataHolder.convo[21], prevInput12 = DataHolder.convo[22], prevOutput13 = DataHolder.convo[23])
 
 @app.route("/question13.html")
 @app.route("/question13", methods=["GET", "POST"])
@@ -136,7 +136,7 @@ def getValue13():
     DataHolder.convo.append(input)
     DataHolder.convo.append(DataHolder.getSentence(input))
 
-    return render_template("question14.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16], prevOutput10 = DataHolder.convo[17], prevInput10 = DataHolder.convo[18], prevOutput11 = DataHolder.convo[19], prevInput11 = DataHolder.convo[20], prevOutput12 = DataHolder.convo[21], prevInput12 = DataHolder.convo[22], prevOutput13 = DataHolder.convo[23], prevInput13 = DataHolder.convo[24])
+    return render_template("question14.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16], prevOutput10 = DataHolder.convo[17], prevInput10 = DataHolder.convo[18], prevOutput11 = DataHolder.convo[19], prevInput11 = DataHolder.convo[20], prevOutput12 = DataHolder.convo[21], prevInput12 = DataHolder.convo[22], prevOutput13 = DataHolder.convo[23], prevInput13 = DataHolder.convo[24], prevOutput14 = DataHolder.convo[25])
 
 @app.route("/question14.html")
 @app.route("/question14", methods=["GET", "POST"])
@@ -145,7 +145,7 @@ def getValue14():
     DataHolder.convo.append(input)
     DataHolder.convo.append(DataHolder.getSentence(input))
 
-    return render_template("question15.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16], prevOutput10 = DataHolder.convo[17], prevInput10 = DataHolder.convo[18], prevOutput11 = DataHolder.convo[19], prevInput11 = DataHolder.convo[20], prevOutput12 = DataHolder.convo[21], prevInput12 = DataHolder.convo[22], prevOutput13 = DataHolder.convo[23], prevInput13 = DataHolder.convo[24], prevOutput14 = DataHolder.convo[25], prevInput14 = DataHolder.convo[26])
+    return render_template("question15.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16], prevOutput10 = DataHolder.convo[17], prevInput10 = DataHolder.convo[18], prevOutput11 = DataHolder.convo[19], prevInput11 = DataHolder.convo[20], prevOutput12 = DataHolder.convo[21], prevInput12 = DataHolder.convo[22], prevOutput13 = DataHolder.convo[23], prevInput13 = DataHolder.convo[24], prevOutput14 = DataHolder.convo[25], prevInput14 = DataHolder.convo[26], prevOutput15 = DataHolder.convo[27])
 
 @app.route("/question15.html")
 @app.route("/question15", methods=["GET", "POST"])
@@ -154,7 +154,7 @@ def getValue15():
     DataHolder.convo.append(input)
     DataHolder.convo.append(DataHolder.getSentence(input))
 
-    return render_template("question15.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16], prevOutput10 = DataHolder.convo[17], prevInput10 = DataHolder.convo[18], prevOutput11 = DataHolder.convo[19], prevInput11 = DataHolder.convo[20], prevOutput12 = DataHolder.convo[21], prevInput12 = DataHolder.convo[22], prevOutput13 = DataHolder.convo[23], prevInput13 = DataHolder.convo[24], prevOutput14 = DataHolder.convo[25], prevInput14 = DataHolder.convo[26], prevOutput15 = DataHolder.convo[27], prevInput15 = DataHolder.convo[28])
+    return render_template("question15.html", prevOutput1 = DataHolder.first, prevInput1 = DataHolder.convo[0], prevOutput2 = DataHolder.convo[1], prevInput2 = DataHolder.convo[2], prevOutput3 = DataHolder.convo[3], prevInput3 = DataHolder.convo[4], prevOutput4 = DataHolder.convo[5], prevInput4 = DataHolder.convo[6], prevOutput5 = DataHolder.convo[7], prevInput5 = DataHolder.convo[8], prevOutput6 = DataHolder.convo[9], prevInput6 = DataHolder.convo[10], prevOutput7 = DataHolder.convo[11], prevInput7 = DataHolder.convo[12], prevOutput8 = DataHolder.convo[13], prevInput8 = DataHolder.convo[14], prevOutput9 = DataHolder.convo[15], prevInput9 = DataHolder.convo[16], prevOutput10 = DataHolder.convo[17], prevInput10 = DataHolder.convo[18], prevOutput11 = DataHolder.convo[19], prevInput11 = DataHolder.convo[20], prevOutput12 = DataHolder.convo[21], prevInput12 = DataHolder.convo[22], prevOutput13 = DataHolder.convo[23], prevInput13 = DataHolder.convo[24], prevOutput14 = DataHolder.convo[25], prevInput14 = DataHolder.convo[26], prevOutput15 = DataHolder.convo[27], prevInput15 = DataHolder.convo[28], prevOutput16 = DataHolder.convo[29])
 
 
 
