@@ -9,8 +9,20 @@
       <center>
   		<div id = "Looklike">You look like {{name}}!</div>
 
-    <img src = "../static/saliency_opencv_frame.png" alt="Your Picture!">
-    <img src = "{{path}}" alt="Your Picture!">
+
+    <div class="image123">
+      <div style="float:left;margin-right:5px;">
+          <img src = "../static/saliency_opencv_frame.png" alt="Your Picture!" height = "200" width = "200">
+      </div>
+      <div style="float:left;margin-right:5px;">
+          <img src = "{{path}}" alt="Your Picture!" height="200" width="200">
+      </div>
+  </div>
+
+
+
+
+
 
     <a href = "face.html" ><button type="button"> Retake your picture</button></a>
     <a href = "Home.html" ><button type="button">Return to Home</button></a>
