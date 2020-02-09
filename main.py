@@ -56,7 +56,8 @@ def face3():
 
     candidateFiles = sorted(glob.glob("./face_detection/testing/*"))
 
-    print(candidateFiles[index].split('/')[-1])
+    result = candidateFiles[index].split('/')[-1]
+    path = "../static/" + result + ".jpeg"
 
     return render_template("face3.html")
 
