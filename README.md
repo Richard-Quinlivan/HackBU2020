@@ -19,5 +19,5 @@ A Candidate Like You is a dual neural network website aim'ed at finding you the 
 
 ![Niko](./face_detection/Results/saliency_Niko.jpg)
 <div style="text-align:center">
-*Example of image saliency*
+_Example of image saliency_
 </div>
