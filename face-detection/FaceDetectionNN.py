@@ -15,7 +15,7 @@ import numpy as np
 
 import scipy.misc
 
-from vis.visualization import visualize_saliency
+# from vis.visualization import visualize_saliency
 import matplotlib.pyplot as plt
 import scipy.ndimage as ndimage
 
@@ -46,29 +46,32 @@ class FaceDetectionNN():
 
         self.model.add(Dense(128, activation = 'relu'))
         self.model.add(Dropout(0.5))
-        self.model.add(Dense(2, activation = 'sigmoid'))
+        self.model.add(Dense(17, activation = 'sigmoid'))
         self.model.compile(loss='mse', optimizer=Adam(),metrics=['accuracy']);
 
     def train(self):
         imageArray = []
         labelArray = []
 
-        bernie = glob.glob("./TrainImages/Bernie/*")
-        trump = glob.glob("./TrainImages/Trump/*")
+        candidateFiles = sorted(glob.glob("./training/*"))
+        print(candidateFiles)
 
-        for file in bernie:
-            img = cv2.imread(file)
-            img = cv2.resize(img, (64, 64),interpolation = cv2.INTER_AREA)
+        labelGeneric = [0]*len(candidateFiles)
+        index = 0
 
-            imageArray.append(img)
-            labelArray.append([1,0])
+        for candiditeFile in candidateFiles:
+            imageFiles = glob.glob(candiditeFile + '/*')
+            label = labelGeneric.copy()
+            label[index] = 1
 
-        for file in bernie:
-            img = cv2.imread(file)
-            img = cv2.resize(img, (64, 64),interpolation = cv2.INTER_AREA)
+            for file in imageFiles:
+                img = cv2.imread(file)
+                img = cv2.resize(img, (64, 64),interpolation = cv2.INTER_AREA)
 
-            imageArray.append(img)
-            labelArray.append([0,1])
+                imageArray.append(img)
+                labelArray.append(label)
+
+            index += 1
 
         imageArray = np.asarray(imageArray)
         labelArray = np.asarray(labelArray)
