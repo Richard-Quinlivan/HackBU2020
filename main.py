@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request
 import pickle
-from face_detection.FaceDetectionNN import FaceDetectionNN
+# from face_detection.FaceDetectionNN import FaceDetectionNN
 # from chatbot.CivicBot import CivicBot
 #
 #
 #
 # bot = CivicBot()
-fd = FaceDetectionNN(False)
+# fd = FaceDetectionNN(False)
 
 app = Flask(__name__)
 
@@ -128,7 +128,7 @@ def getValue9():
 
     input = request.form["input"]
 
-    return render_template("question10.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = previn8, prevInput9 = input)
+    return render_template("question10.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = input)
 
 @app.route("/question10.html")
 @app.route("/question10", methods=["GET", "POST"])
@@ -201,6 +201,7 @@ def getValue13():
     prevIn12 = request.form["pInput12"]
 
     input = request.form["input"]
+    print(input)
 
     return render_template("question14.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = prevIn10, prevInput11 = prevIn11, prevInput12 = prevIn12, prevInput13 = input)
 
@@ -222,6 +223,8 @@ def getValue14():
     prevIn13 = request.form["pInput13"]
 
     input = request.form["input"]
+    print(input)
+
 
     return render_template("question15.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = prevIn10, prevInput11 = prevIn11, prevInput12 = prevIn12, prevInput13 = prevIn13, prevInput14 = input)
 
@@ -245,7 +248,7 @@ def getValue15():
 
     input = request.form["input"]
 
-    return render_template("question4.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = prevIn10, prevInput11 = prevIn11, prevInput12 = prevIn12, prevInput13 = prevIn13, prevInput14 = prevIn14, prevInput15 = input)
+    return render_template("question15.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = prevIn10, prevInput11 = prevIn11, prevInput12 = prevIn12, prevInput13 = prevIn13, prevInput14 = prevIn14, prevInput15 = input)
 
 
 
