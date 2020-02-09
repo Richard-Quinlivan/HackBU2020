@@ -5,8 +5,9 @@ import numpy as np
 
 
 def main():
-    train = False
-    test = False
+    train = True
+    test = True
+    detect_saliency = False
 
     nn = FaceDetectionNN(train)
 
@@ -45,22 +46,25 @@ def main():
 
         print(correct/total, "% correct")
 
-    saliencyFile = "./testing/Amy Klobuchar/Amy Klobuchar-135.jpeg"
-    # saliencyFile = "./testing/Jack_but_like_normal_sized.jpg"
 
-    img = cv2.imread(saliencyFile)
-    img = cv2.resize(img, (64, 64),interpolation = cv2.INTER_AREA)
+    if detect_saliency:
 
-    name = "Results/saliency_" + saliencyFile.split('/')[-1]
+        saliencyFile = "./testing/Mark Sanford/Mark Sanford-135.jpeg"
+        # saliencyFile = "./Other/Niko.jpg"
 
-    nn.showSaliencyMap(img, name)
+        img = cv2.imread(saliencyFile)
+        img = cv2.resize(img, (64, 64),interpolation = cv2.INTER_AREA)
 
-    prediction = nn.predict(np.asarray([img]))[0]
-    index = np.where(prediction == max(prediction))[0][0]
+        name = "Results/saliency_" + saliencyFile.split('/')[-1]
+
+        nn.showSaliencyMap(img, name)
+
+        prediction = nn.predict(np.asarray([img]))[0]
+        index = np.where(prediction == max(prediction))[0][0]
 
 
-    candidateFiles = sorted(glob.glob("./testing/*"))
-    print(candidateFiles[index])
+        candidateFiles = sorted(glob.glob("./testing/*"))
+        print(candidateFiles[index].split('/')[-1])
 
 
 
