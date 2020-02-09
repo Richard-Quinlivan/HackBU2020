@@ -1,22 +1,25 @@
 from flask import Flask, render_template, request
 import pickle
-from chatbot.CivicBot import CivicBot
-
-
-
-bot = CivicBot()
+from face_detection.FaceDetectionNN import FaceDetectionNN
+# from chatbot.CivicBot import CivicBot
+#
+#
+#
+# bot = CivicBot()
+fd = FaceDetectionNN(False)
 
 app = Flask(__name__)
-@app.route("/Home.html")
 
 @app.route("/")
 
+@app.route("/Home.html")
 def Home():
     return render_template("Home.html")
 
 @app.route("/face.html")
 @app.route("/face", methods=["GET", "POST"])
 def face():
+
     return render_template("face.html")
 
 @app.route("/question1.html")
@@ -54,7 +57,7 @@ def getValue4():
     prevIn3 = request.form["pInput3"]
     input = request.form["input"]
 
-    return render_template("question4.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = input)
+    return render_template("question5.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = input)
 
 @app.route("/question5.html")
 @app.route("/question5", methods=["GET", "POST"])
@@ -66,7 +69,7 @@ def getValue5():
 
     input = request.form["input"]
 
-    return render_template("question4.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = input)
+    return render_template("question6.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = input)
 
 @app.route("/question6.html")
 @app.route("/question6", methods=["GET", "POST"])
@@ -75,12 +78,12 @@ def getValue6():
     prevIn2 = request.form["pInput2"]
     prevIn3 = request.form["pInput3"]
     prevIn4 = request.form["pInput4"]
-    prevIn4 = request.form["pInput4"]
+    prevIn5 = request.form["pInput5"]
 
 
     input = request.form["input"]
 
-    return render_template("question4.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = input)
+    return render_template("question7.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = input)
 
 @app.route("/question7.html")
 @app.route("/question7", methods=["GET", "POST"])
@@ -89,12 +92,12 @@ def getValue7():
     prevIn2 = request.form["pInput2"]
     prevIn3 = request.form["pInput3"]
     prevIn4 = request.form["pInput4"]
-    prevIn4 = request.form["pInput4"]
-    prevIn4 = request.form["pInput4"]
+    prevIn5 = request.form["pInput5"]
+    prevIn6 = request.form["pInput6"]
 
     input = request.form["input"]
 
-    return render_template("question4.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = input)
+    return render_template("question8.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = input)
 
 @app.route("/question8.html")
 @app.route("/question8", methods=["GET", "POST"])
@@ -103,13 +106,13 @@ def getValue8():
     prevIn2 = request.form["pInput2"]
     prevIn3 = request.form["pInput3"]
     prevIn4 = request.form["pInput4"]
-    prevIn4 = request.form["pInput4"]
-    prevIn4 = request.form["pInput4"]
-    prevIn4 = request.form["pInput4"]
+    prevIn5 = request.form["pInput5"]
+    prevIn6 = request.form["pInput6"]
+    prevIn7 = request.form["pInput7"]
 
     input = request.form["input"]
 
-    return render_template("question4.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = input)
+    return render_template("question9.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = input)
 
 @app.route("/question9.html")
 @app.route("/question9", methods=["GET", "POST"])
@@ -125,7 +128,7 @@ def getValue9():
 
     input = request.form["input"]
 
-    return render_template("question4.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = previn8, prevInput9 = input)
+    return render_template("question10.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = previn8, prevInput9 = input)
 
 @app.route("/question10.html")
 @app.route("/question10", methods=["GET", "POST"])
@@ -142,7 +145,7 @@ def getValue10():
 
     input = request.form["input"]
 
-    return render_template("question4.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = input)
+    return render_template("question11.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = input)
 
 @app.route("/question11.html")
 @app.route("/question11", methods=["GET", "POST"])
@@ -160,7 +163,7 @@ def getValue11():
 
     input = request.form["input"]
 
-    return render_template("question4.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = prevIn10, prevInput11 = input)
+    return render_template("question12.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = prevIn10, prevInput11 = input)
 
 @app.route("/question12.html")
 @app.route("/question12", methods=["GET", "POST"])
@@ -179,7 +182,7 @@ def getValue12():
 
     input = request.form["input"]
 
-    return render_template("question4.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = prevIn10, prevInput11 = prevIn11, prevInput12 = input)
+    return render_template("question13.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = prevIn10, prevInput11 = prevIn11, prevInput12 = input)
 
 @app.route("/question13.html")
 @app.route("/question13", methods=["GET", "POST"])
@@ -199,7 +202,7 @@ def getValue13():
 
     input = request.form["input"]
 
-    return render_template("question4.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = prevIn10, prevInput11 = prevIn11, prevInput12 = prevIn12, prevInput13 = input)
+    return render_template("question14.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = prevIn10, prevInput11 = prevIn11, prevInput12 = prevIn12, prevInput13 = input)
 
 @app.route("/question14.html")
 @app.route("/question14", methods=["GET", "POST"])
@@ -220,7 +223,7 @@ def getValue14():
 
     input = request.form["input"]
 
-    return render_template("question4.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = prevIn10, prevInput11 = prevIn11, prevInput12 = prevIn12, prevInput13 = prevIn13, prevInput14 = input)
+    return render_template("question15.html",prevInput1 = prevIn1, prevInput2 = prevIn2, prevInput3 = prevIn3, prevInput4 = prevIn4, prevInput5 = prevIn5, prevInput6 = prevIn6, prevInput7 = prevIn7, prevInput8 = prevIn8, prevInput9 = prevIn9, prevInput10 = prevIn10, prevInput11 = prevIn11, prevInput12 = prevIn12, prevInput13 = prevIn13, prevInput14 = input)
 
 @app.route("/question15.html")
 @app.route("/question15", methods=["GET", "POST"])
