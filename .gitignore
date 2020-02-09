@@ -1,11 +1,12 @@
 *.DS_Store
 *.pyc
-chatbot/__pycache__/*.pyc
+/chatbot/__pycache__/*.pyc
 
 /face-detection/testing/*.jpeg
 /face-detection/training/*.jpeg
 /face-detection/OldStuff/*/*/*.jpeg
-
+/static/opencv_frame.png
+/static/saliency_opencv_frame.png
 /face-detection/testing/*.png
 /face-detection/training/*.png
 /face-detection/OldStuff/*/*/*.png
