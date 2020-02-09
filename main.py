@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 @app.route("/Home.html")
 def Home():
-    return render_template("Home.html")
+    return render_template("Andrew Yang.html")
 
 @app.route("/face.html")
 @app.route("/face", methods=["GET", "POST"])
