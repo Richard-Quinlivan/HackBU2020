@@ -50,10 +50,12 @@ class CivicBot:
                 self.alreadyTried = False
                 return self.FOLLOW_UP_QUESTIONS[nextNum]
         ## If we're here, then it is True that: self.follow_ups = []
-        if self.notEnoughInfo and not self.alreadyTried:
+        if self.notEnoughInfo:
             ## If we're here, then we didn't get any new information
-            self.alreadyTried = True
-            return "Could you tell me a bit more information? When it comes to politics, what else is important to you?"
+            self.opinionTime = False
+            if not self.alreadyTried:
+                self.alreadyTried = True
+                return "I've already gotten some information from you on that - could you tell me what you think about a policy we haven't spoken about yet?"
         print("Next Step")
         self.opinionTime = False
         self.alreadyTried = False
