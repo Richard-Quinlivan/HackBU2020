@@ -12,9 +12,12 @@ import numpy as np
 import pickle
 
 try:
-    from ModelDesign import ModelDesign
+    from chatbot.chatbot1.ModelDesign import ModelDesign
 except:
-    from chatbot1.ModelDesign import ModelDesign
+    try:
+        from ModelDesign import ModelDesign
+    except:
+        from chatbot1.ModelDesign import ModelDesign
 
 class ChatBot1:
     def __init__(self):
