@@ -3,7 +3,7 @@
 #### Adiel Felsen, Brendan Klayman, Nick Pellegrino, Richard Quinlivan
 
 ## Description
-A Candidate Like You is a dual neural network website aim'ed at finding you the presidential candidate that is the most like you, however you determine that.
+A Candidate Like You is a multi neural network website aimed at finding you the presidential candidate that is the most like you, however you determine that.
 
 ## Finding most like-minded candidate:
  - A ChatBot prompts conversation with the user about their political views
