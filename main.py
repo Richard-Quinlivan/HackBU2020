@@ -4,7 +4,8 @@ import cv2
 import pickle
 from DataHolder import DataHolder
 from face_detection.FaceDetectionNN import FaceDetectionNN
-
+import numpy as np
+import glob
 
 
 # app = Flask(static_folder="/Users/richardquinlivan4444/comp_sci/hackathon/HackBU2020/static", __name__)
@@ -50,7 +51,7 @@ def face3():
 
     fd.showSaliencyMap(img, name)
 
-    prediction = nn.predict(np.asarray([img]))[0]
+    prediction = fd.predict(np.asarray([img]))[0]
     index = np.where(prediction == max(prediction))[0][0]
 
     candidateFiles = sorted(glob.glob("./face_detection/testing/*"))
