@@ -32,7 +32,7 @@ class FaceDetectionNN():
         else:
             self.model = Sequential()
 
-            self.model.add(Conv2D(64, activation='relu',padding='same',kernel_size=(3, 3)));
+            self.model.add(Conv2D(256, activation='relu',padding='same',kernel_size=(3, 3)));
             self.model.add(MaxPooling2D(pool_size=(2, 2)))
             self.model.add(BatchNormalization())
             self.model.add(Dropout(0.2))
@@ -42,7 +42,13 @@ class FaceDetectionNN():
             self.model.add(BatchNormalization())
             self.model.add(Dropout(0.2))
 
-            self.model.add(Conv2D(256, activation='relu',padding='same',kernel_size=(3, 3)));
+            self.model.add(Conv2D(64, activation='relu',padding='same',kernel_size=(3, 3)));
+            self.model.add(MaxPooling2D(pool_size=(2, 2)))
+            self.model.add(BatchNormalization())
+            self.model.add(Dropout(0.2))
+
+
+            self.model.add(Conv2D(32, activation='relu',padding='same',kernel_size=(3, 3)));
             self.model.add(MaxPooling2D(pool_size=(2, 2)))
             self.model.add(BatchNormalization())
             self.model.add(Dropout(0.2))
@@ -52,7 +58,7 @@ class FaceDetectionNN():
 
             self.model.add(Dense(256, activation = 'relu'))
             self.model.add(Dropout(0.5))
-            self.model.add(Dense(17, activation = 'sigmoid'))
+            self.model.add(Dense(17, activation = 'softmax'))
             self.model.compile(loss='mse', optimizer=Adam(),metrics=['accuracy']);
 
     def train(self):
@@ -99,7 +105,7 @@ class FaceDetectionNN():
         smoothe = cv2.GaussianBlur(grads, (3,3), cv2.BORDER_DEFAULT)
 
         plt.imshow(img)
-        plt.imshow(grads, alpha = 1)
+        plt.imshow(grads, alpha = .4)
 
         plt.savefig(name)
         plt.clf()
