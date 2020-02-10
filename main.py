@@ -11,6 +11,12 @@ import glob
 # app = Flask(static_folder="/Users/richardquinlivan4444/comp_sci/hackathon/HackBU2020/static", __name__)
 app = Flask(__name__)
 
+@app.after_request
+def after_request(response):
+    response.headers["Cache-Control"] = "no-store"
+    return response
+
+
 @app.route("/")
 
 @app.route("/Home.html")

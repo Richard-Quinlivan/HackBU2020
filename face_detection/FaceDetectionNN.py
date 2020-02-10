@@ -19,6 +19,7 @@ from vis.visualization import visualize_saliency
 import matplotlib.pyplot as plt
 import scipy.ndimage as ndimage
 
+plt.switch_backend('Agg')
 
 
 class FaceDetectionNN():
