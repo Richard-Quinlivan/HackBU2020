@@ -6,12 +6,47 @@
 		<link rel="stylesheet" href="../static/stylesheet1.css"/>
 	</head>
 	<body>
-	<center>
+
+    <center>
+
+
+	<video id="video" width="640" height="480" autoplay></video>
+    <canvas id="canvas" width="640" height="480"></canvas>
+
+
 		<br>
-		<div id = "Label">Take your picture and see what candidate you look the most alike!</div>
+		<div>Take your picture and see what candidate you look the most alike!</div>
 		<br>
-		<a href= "face2.html" ><button type="button">Take Picture</button></a>
-		<a href = "Home.html" ><button type="button">Return to Home</button></a>
+		<a href= "face2.html" id = "snap"><button type="button">Take Picture</button></a>
+		<a href = "home.html" ><button type="button">Return to Home</button></a>
 	</center>
+
+
+	<script>
+
+        var video = document.getElementById('video');
+        if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+                //video.src = window.URL.createObjectURL(stream);
+                video.srcObject = stream;
+                video.play();
+            });
+        }
+
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+        var video = document.getElementById('video');
+
+        // Trigger photo take
+        document.getElementById("snap").addEventListener("click", function() {
+            context.drawImage(video, 0, 0, 640, 480);
+            var request = new XMLHttpRequest();
+            request.open('POST', '/face3', true);
+            request.send();
+        });
+
+    </script>
 	</body>
 </html>
+
+

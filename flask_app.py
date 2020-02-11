@@ -1,15 +1,19 @@
 from flask import Flask, render_template, request
+from socket import gethostname
+import time
 import cv2
+import pickle
 from DataHolder import DataHolder
 from face_detection.FaceDetectionNN import FaceDetectionNN
 import numpy as np
 import glob
-from flask import send_from_directory
-from flask import Markup
 
 
 # app = Flask(static_folder="/Users/richardquinlivan4444/comp_sci/hackathon/HackBU2020/static", __name__)
 app = Flask(__name__)
+
+
+
 
 @app.after_request
 def after_request(response):
@@ -19,7 +23,7 @@ def after_request(response):
 
 @app.route("/")
 
-@app.route("/Home.html")
+@app.route("/home.html")
 def Home():
     DataHolder.reset()
     return render_template("home.html")
@@ -32,15 +36,15 @@ def face():
 @app.route("/face2.html")
 @app.route("/face2", methods=["GET", "POST"])
 def face2():
+    cam = cv2.VideoCapture(0)
 
-    image = request.args.get('image')
-    image = request.files['image']
+    time.sleep(1)
+    ret, frame = cam.read()
 
     img_name = "./static/opencv_frame.png"
+    cv2.imwrite(img_name, frame)
 
-    image.save(img_name)
-    message = "test"
-
+    cam.release()
     return render_template("face2.html")
 
 @app.route("/face3.html")
@@ -80,7 +84,7 @@ def question1():
 
 @app.route("/question1", methods=["GET", "POST"])
 def getValue1():
-    input = request.form
+    input = request.form["input"]
     DataHolder.convo.append(input)
     next = DataHolder.getSentence(input)
     if next == "NULL":
@@ -260,4 +264,5 @@ def getValue15():
 
 
 if __name__ == "__main__":
+    # if 'liveconsole' not in gethostname():
     app.run(debug=True)
