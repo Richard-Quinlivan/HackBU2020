@@ -36,13 +36,9 @@ def face():
 @app.route("/face2.html")
 @app.route("/face2", methods=["GET", "POST"])
 def face2():
-    cam = cv2.VideoCapture(0)
+    image = request.args.get('image')
 
-    time.sleep(1)
-    ret, frame = cam.read()
-
-    img_name = "./static/opencv_frame.png"
-    cv2.imwrite(img_name, frame)
+    return render_template("face2.html")
 
     cam.release()
     return render_template("face2.html")

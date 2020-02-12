@@ -7,18 +7,19 @@
 	</head>
 	<body>
 
-    <center>
+  <center>
 
 
-	<video id="video" width="640" height="480" autoplay></video>
-    <canvas id="canvas" width="640" height="480"></canvas>
+		  <video id="video" width="640" height="480" autoplay></video>
+	    <canvas id="canvas" width="640" height="480"></canvas>
 
 
-		<br>
-		<div>Take your picture and see what candidate you look the most alike!</div>
-		<br>
-		<a href= "face2.html" id = "snap"><button type="button">Take Picture</button></a>
-		<a href = "home.html" ><button type="button">Return to Home</button></a>
+			<br>
+			<div>Take your picture and see what candidate you look the most alike!</div>
+			<br>
+			<a href= "face2.html" id = "snap"><button type="button">Take Picture</button></a>
+			<a href = "home.html" ><button type="button">Return to Home</button></a>
+
 	</center>
 
 
@@ -41,12 +42,10 @@
         document.getElementById("snap").addEventListener("click", function() {
             context.drawImage(video, 0, 0, 640, 480);
             var request = new XMLHttpRequest();
-            request.open('POST', '/face3', true);
+						request.open('POST', '/face2.html?image=' + video.toString('base64'), true);
             request.send();
         });
 
     </script>
 	</body>
 </html>
-
-
